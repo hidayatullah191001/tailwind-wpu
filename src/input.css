@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    h1 {
+        @apply text-6xl
+    }
+}
+
+@layer components {
+    .btn-blue {
+        @apply bg-blue-500 hover: bg-blue-700 text-white font-bold py-2 px-4 rounded;
+    }
+
+    .grid-card {
+        @apply h-52 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] w-full xl:aspect-[4/3] overflow-hidden relative hover:scale-95 transition-all duration-500;
+    }
+}
+
+@layer utilities {
+    #toggle:checked~label div.toggle-circle {
+        @apply translate-x-3;
+    }
+}
